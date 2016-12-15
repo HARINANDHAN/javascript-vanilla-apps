@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ToDo List</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class='container-fluid'>
+		<h1 class="page-header">Get Shit Done</h1>		
+		
+		<!-- DISPLAY AND TOGGLE TODOS -->
+		<div class="panel panel-default">
+		  <div class="panel-body">
+		    <div class="row">
+					<div class="col-xs-8">
+						<i class="fa fa-list fa-2x" onclick="handlers.displayToDos()"></i>
+						<span>Display All</span>
+						<i class="fa fa-toggle-off fa-2x" onclick="handlers.toggleAll()"></i>
+						<span>Toggle All</span>
+					</div>
+					<div class="col-xs-4">
+						<div class="pull-right">
+							<a href="#" target="_blank"><i class="fa fa-facebook-f fa-lg"></i></a>
+							<a href="#" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+							<a href="#" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>	
+						</div>
+					</div>
+				</div>
+		  </div>
+		</div>
+
+		<!-- INPUT TO ADD TODOS -->
+		<div class="input-group input-group-sm col-xs-12">
+			<input type="text" class="form-control addToDoTextInput"/>
+			<span class="input-group-btn">
+				<button 
+					class="btn btn-success" 
+					onclick="handlers.addToDo()">Add</button>															
+			</span>				
+		</div>
+
+		<!-- LIST ITEMS -->
+		<ul class="todolist list-group editToDoTextInput"></ul>
+
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src='main.js'></script>
+</body>
+</html>
