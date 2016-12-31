@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Photo Editor</title>
+	<link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h2>Photo Editor</h2>
+<p>Edit your photo with <span class="highlight">Javascript</span></p>
+
+<div class="controls">
+	<label>Spacing:</label>
+	<input type="range" name="spacing" min="10" max="200" value="0" data-sizing="px">
+
+	<label>Blur:</label>
+	<input type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+
+	<label>Base Color:</label>
+	<input type="color" name="base" value="#ffc600">
+</div>
+
+<img src="https://cdn.pixabay.com/photo/2016/09/12/14/52/new-years-eve-1664737_960_720.jpg">
+
+<script src="app.js"></script>
+</body>
+</html>
